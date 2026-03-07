@@ -1,111 +1,146 @@
-# ENGLISH <img width="25px" src="./assets/logo.png" /> JANALA
+<p align="center">
+  <img src="./assets/banner.png" alt="English Janala Vocabulary App Banner" width="100%">
+</p>
+
+<h1 align="center">📘 English Janala – Vocabulary Learning App</h1>
+
+<p align="center">
+
+<a href="https://ab-niloy.github.io/English-Janala-App/">
+<img src="https://img.shields.io/badge/Live-Demo-success?style=for-the-badge&logo=githubpages">
+</a>
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+
+<img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+
+<img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white">
+
+<img src="https://img.shields.io/badge/DaisyUI-5A0EF8?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/API-Integration-orange?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge">
+
+</p>
 
 ---
 
-## ⚡ API Endpoints
+# 📌 Project Overview
 
-1. Get ⚡ All Levels
+**English Janala** is an interactive vocabulary learning web application designed to help users learn English words through structured lessons and API-powered vocabulary data.
 
-```bash
-https://openapi.programming-hero.com/api/levels/all
-```
+The platform provides lesson-based vocabulary exploration, pronunciation support, meaning explanations, and contextual examples to enhance learning.
 
-1. Get ⚡ Words by Levels <br/>
-   https:// openapi.programming-hero.com/api/level/{id}
-
-```bash
-https://openapi.programming-hero.com/api/level/5
-```
-
-1. Get ⚡ Words Detail <br/>
-   https:// openapi.programming-hero.com/api/word/{id}
-
-```bash
-https://openapi.programming-hero.com/api/word/5
-```
-
-1. Get ⚡ All Words <br/>
-
-```bash
-https://openapi.programming-hero.com/api/words/all
-```
-
-# Work To do
-
-### 1. Show Levels on The UI
-
-- [ ] Show a center-aligned heading as Figma
+This project represents my **first experience working with APIs in a real web application.**
 
 ---
 
-- [ ] Create dynamically generated buttons from **API-01** for each lesson
-- [ ] Lesson Buttons will be displayed on page load
+# 🌐 Live Demo
+
+👉 https://ab-niloy.github.io/English-Janala-App/
 
 ---
 
-### 2. Show Word Cards Based on Level
+# ✨ Key Features
 
-- [ ] Show a default text that will be displayed in the Vocabulary section initially
-- [ ] on Clicking a Specific Lesson Button Load All the words from **API-02**
-- [ ] Display all words for a selected lesson in a card format, showing:
+### 🔐 Simple Authentication Interface
 
-  - [ ] Word
-  - [ ] Word meaning & pronunciation
-  - [ ] Two buttons with relevant icons as per Figma
+Users can log in using a mobile number and PIN to access the learning dashboard.
 
-- [ ] Show **\*No Word Found** message if no words exist for a lesson
+### 📚 Lesson-Based Vocabulary Learning
+
+Vocabulary is organized into structured lessons to make learning systematic.
+
+### 🔎 Dynamic Vocabulary Search
+
+Users can search for words and instantly view relevant vocabulary results.
+
+### 🧠 Word Details Modal
+
+Each vocabulary word provides:
+
+* Meaning
+* Pronunciation
+* Example sentence
+* Synonyms
+* Audio pronunciation
+
+### 🔊 Pronunciation Audio
+
+Users can listen to word pronunciation through an integrated audio feature.
+
+### ❓ FAQ Section
+
+Frequently asked questions help guide users through the platform.
+
+### 📱 Responsive Interface
+
+The UI adapts to different screen sizes for a consistent user experience.
 
 ---
 
-- [ ] Create functionality to highlight the active lesson button
+# 🛠 Technologies Used
+
+* **HTML5**
+* **CSS3**
+* **Vanilla JavaScript**
+* **Tailwind CSS**
+* **DaisyUI**
+* **REST API Integration**
+* **DOM Manipulation**
+* **Event-driven UI updates**
 
 ---
 
-### 3. Use Different Color on The Active Level Button
+# 🧠 Core Concepts Implemented
 
-- [ ] After Successfully Loading words of a level , differentiate the button so user can understand which button is active
+This project demonstrates:
 
-### 4. Vocabulary Details
+* Fetching data from external APIs
+* Asynchronous JavaScript using `fetch()`
+* Dynamic DOM rendering
+* Event-based user interactions
+* Modal UI components
+* Conditional rendering
+* Search filtering
 
-- [ ] Create functionality to open a modal when clicking the details icon
-- [ ] Data will be load from **API-03**
-- [ ] modal will displays:
-  - [ ] Word with pronunciation
-  - [ ] Example sentence
-  - [ ] Synonyms
-  - [ ] A "Complete Learning" button to close the modal
+---
 
-### 5. Handling Invalid Data
+# 🎯 Why This Project Matters
 
-- [ ] avoid displaying falsy values like `undefined` or `null`
-- [ ] display relevant words if no data is found
+This project is important in my development journey because it is:
 
-### 6. Loading Spinner
+* My **first project that integrates APIs**
+* My **first dynamic data-driven application**
+* A step forward from **static UI to interactive web applications**
 
-- [ ] Create a loading spinner that will be display when vocabulary is loading from API
+It helped me understand:
 
-### 7. Implement Search Functionality
+* How front-end apps communicate with APIs
+* How to render dynamic data on the page
+* How to manage user interactions in JavaScript
 
-- [ ] Take a input Box.
-- [ ] on Changing value It will Search word and show in the UI.
-- [ ] If anyone Do search reset active button
+---
 
-### 8. Save Word Feature
+# 🚀 Future Improvements
 
-- [ ] in the UI of Card add a button `Heart icon`
-- [ ] on Clicking it. Store the Word in the Saved Box
-- [ ] Show Saved words in a Different Section.
+Potential improvements for this project include:
 
-### 9. Speak your Vocabularies
+* User progress tracking
+* Favorite vocabulary list
+* Quiz system for vocabulary testing
+* Dark mode support
+* Backend database integration
+* User accounts with authentication
 
-- [ ] Create functionality for voice pronunciation of vocabulary words
-- [ ] Use below function and implement on clicking sound icon
+---
 
-```js
-function pronounceWord(word) {
-  const utterance = new SpeechSynthesisUtterance(word);
-  utterance.lang = "en-EN"; // English
-  window.speechSynthesis.speak(utterance);
-}
-```
+# 👨‍💻 Author
 
+**Arnob Biswas Niloy**
+Frontend Developer | JavaScript Learner
+
+Passionate about building interactive and user-friendly web applications.
