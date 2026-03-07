@@ -141,6 +141,6 @@ Potential improvements for this project include:
 # 👨‍💻 Author
 
 **Arnob Biswas Niloy**
-Frontend Developer | JavaScript Learner
 
+Frontend Developer | JavaScript Learner
 Passionate about building interactive and user-friendly web applications.
