@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="./assets/banner.png" alt="English Janala Vocabulary App Banner" width="100%">
-</p>
 
 <h1 align="center">📘 English Janala – Vocabulary Learning App</h1>
 
